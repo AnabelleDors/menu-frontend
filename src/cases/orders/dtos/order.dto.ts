@@ -1,5 +1,5 @@
-import type { GuestCheckDTO } from '@/cases/guest-checks/dtos/guest-check.dto'
-import type { ProductDTO } from '@/cases/products/dtos/product.dto'
+import type { GuestCheckDTO } from '@/cases/guest-checks/dtos/guest-check.dto';
+import type { ProductDTO } from '@/cases/products/dtos/product.dto';
 
 export type OrderStatus = 'NEW' | 'PREPARING' | 'READY' | 'DELIVERY'
 

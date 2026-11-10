@@ -1,4 +1,4 @@
-import type { CategoryDTO } from '@/cases/categories/dtos/category.dto'
+import type { CategoryDTO } from '@/cases/categories/dtos/category.dto';
 
 export interface ProductDTO {
     id: string;
