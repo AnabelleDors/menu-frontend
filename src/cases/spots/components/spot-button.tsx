@@ -3,18 +3,18 @@ import { MapPin } from "lucide-react";
 import { SpotDialog } from "./spot-dialog";
 import { useState } from "react";
 import { Button } from "@base-ui/react";
-import type { SpotDTO } from "../dtos/spot.dto";
+import type { spotDTO } from "../dtos/spot.dto";
 
 export function SpotButton() {
 
   const [dialogOpen, setDialogOpen] = useState(false);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [selectedSpot, setSelectedSpot] = useState<SpotDTO | null>(() => {
+  const [selectedSpot, setSelectedSpot] = useState<spotDTO | null>(() => {
     const spotStorage = localStorage.getItem('spot')
     return spotStorage ? JSON.parse(spotStorage) : null;
   });
 
-  function handleSelect(spot: SpotDTO){
+  function handleSelect(spot: spotDTO){
     localStorage.setItem('spot', JSON.stringify(spot));
     setSelectedSpot(spot);
     setDialogOpen(false);
